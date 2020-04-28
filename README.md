@@ -1,6 +1,28 @@
-# Data.gov Catalog App 2.8 Local Development Environment
+# [WIP] Data.gov Catalog App 2.8 Local Development Environment
 
-TODO -- Descripton and setup instructions 
+Fork of OKF's very-well-kept [Docker CKAN setup](https://github.com/okfn/docker-ckan) containing a development environment for GSA Data.gov catalog app v2.8.
+
+[See below](#docker-compose-setup-for-ckan) for complete docker-ckan documentation.
+
+## Quick Start
+
+```bash
+$ git clone https://gitlab.com/starsinmypockets/gsa-catalog-2.8-docker
+$ git co gsa-catalog-2.8-app
+$ cp .env.example .env
+$ make build up
+```
+
+## Generate Deployable Requirements
+
+TODO
+
+## Extension Development
+
+TODO -- prob just link to /src and dev explanation below
+
+## MORE TODO.... list here
+
 
 # Docker Compose setup for CKAN
 
