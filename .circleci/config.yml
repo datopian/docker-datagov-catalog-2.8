@@ -6,7 +6,7 @@ jobs:
       - checkout
       - run:
           name: Copy env
-          command: cp .test.example .env 
+          command: cp .env.test .env 
       - run:
           name: Run tests
           command: make test
