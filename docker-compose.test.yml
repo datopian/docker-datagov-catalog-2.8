@@ -4,6 +4,9 @@ services:
   ckan:
     env_file:
       - .test.env
+  db:
+    env_file:
+      - .test.env
   test:
     env_file:
       - .test.env
