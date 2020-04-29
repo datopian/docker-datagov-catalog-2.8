@@ -1,4 +1,6 @@
 .env
+!./circleci/.env
+
 src/*
 
 .pyc
