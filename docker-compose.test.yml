@@ -1,9 +1,11 @@
 # run with make test
 version: '3'
 services:
+  ckan:
+    - ./circleci/.env
   test:
     env_file:
-      - .env
+      - .circleci/.env
     build:
       context: .
       dockerfile: Dockerfile.test
