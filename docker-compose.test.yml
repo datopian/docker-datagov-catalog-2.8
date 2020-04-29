@@ -1,15 +1,9 @@
 # run with make test
 version: '3'
 services:
-  ckan:
-    env_file:
-      - .test.env
-  db:
-    env_file:
-      - .test.env
   test:
-    env_file:
-      - .test.env
+    env_file: 
+      .env
     build:
       context: .
       dockerfile: Dockerfile.test

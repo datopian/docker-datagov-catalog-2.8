@@ -7,8 +7,7 @@ services:
       dockerfile: Dockerfile.dev
       args:
         - TZ=${TZ}
-    env_file:
-      - .env
+    env_file: .env
     links:
       - db
       - solr
@@ -32,8 +31,7 @@ services:
 
   db:
     container_name: db
-    env_file:
-      - .env
+    env_file: .env
     build:
       context: postgresql/
     volumes:

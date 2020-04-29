@@ -5,5 +5,8 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Copy env
+          command: cp .test.example .env 
+      - run:
           name: Run tests
           command: make test
