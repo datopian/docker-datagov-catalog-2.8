@@ -1,0 +1,9 @@
+# run with make test
+version: '3'
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    depends_on:
+      - ckan

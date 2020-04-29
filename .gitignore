@@ -4,6 +4,8 @@ src/*
 .pyc
 .pyo
 
+.*.sw*
+
 .DS_Store
 .DS_Store?
 ._*
