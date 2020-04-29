@@ -21,7 +21,7 @@ requirements:
 	docker-compose run --rm -T ckan pip --quiet freeze > requirements-freeze.txt
 
 test:
-	docker-compose -f docker-compose.test.yml -f docker-compose.yml -f docker-compose.dev.yml -f build
+	docker-compose -f docker-compose.test.yml -f docker-compose.yml -f docker-compose.dev.yml build
 	docker-compose -f docker-compose.test.yml -f docker-compose.yml -f docker-compose.dev.yml up --abort-on-container-exit test
 
 update-dependencies:
