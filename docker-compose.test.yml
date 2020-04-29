@@ -3,10 +3,10 @@ version: '3'
 services:
   ckan:
     env_file:
-      - ./circleci/.env
+      - .test.env
   test:
     env_file:
-      - .circleci/.env
+      - .test.env
     build:
       context: .
       dockerfile: Dockerfile.test
